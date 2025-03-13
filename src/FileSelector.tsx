@@ -4,7 +4,7 @@ interface FileSelectorProps {
   onFileLoad: (content: string) => void;
 }
 
-const FileSelector: React.FC<FileSelectorProps> = ({ onFileLoad }) => {
+const FileSelector: React.FC<FileSelectorProps> = ({onFileLoad}) => {
   const handleFileChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const file = event.target.files?.[0];
     if (file) {

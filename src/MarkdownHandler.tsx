@@ -40,7 +40,7 @@ const MarkdownRenderer: React.FC<MarkdownRendererProps> = ({
       remarkPlugins={[remarkGfm]}
       rehypePlugins={[rehypeRaw]}
       components={{
-        table({ children }) {
+        table({children}) {
           return (
             <table className="table table-striped table-bordered">
               {children}
@@ -70,7 +70,7 @@ const MarkdownRenderer: React.FC<MarkdownRendererProps> = ({
           );
         },
         //code({ node, inline, className, children, ...props }) {
-        code({ node, className, children, ...props }) {
+        code({node, className, children, ...props }) {
           
           const match = /language-(\w+)/.exec(className || "");
           

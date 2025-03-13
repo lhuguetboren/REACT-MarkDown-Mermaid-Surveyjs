@@ -40,8 +40,8 @@ const MarkdownEditor: React.FC = () => {
   // };
 
   const toogleEdicion = () => {
-    document.getElementById("editor").classList.toggle("invisible");
-    document.getElementById("visor").classList.toggle("invisible");
+    //document.getElementById("editor").classList.toggle("invisible");
+    //document.getElementById("visor").classList.toggle("invisible");
   };
 
   const copyToClipboard = (text: string) => {
@@ -84,7 +84,7 @@ const MarkdownEditor: React.FC = () => {
        {/*Selector de archivo */}
       </div>
       
-<div id ="visor" className="invisible"> 
+<div id ="visor"> 
       <div className="row w-100 h-100">
         <div className="col-md-2  p-3">
           <h5>Índice</h5>
